@@ -1,3 +1,93 @@
+
+body {
+    background-color: #f0f8ff; /* Light Blue */
+}
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from pink to orange */
+}
+body {
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+for (let i = 0; i < 100; i++) {
+    let star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * 100 + '%';
+    star.style.left = Math.random() * 100 + '%';
+    document.body.appendChild(star);
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Shadow effect */
+}
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000; /* Adding text shadow */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Hover effect */
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
 h2 {
   color: #4CAF50;
   font-size: 24px;
